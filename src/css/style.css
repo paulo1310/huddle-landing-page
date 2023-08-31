@@ -1,6 +1,10 @@
 /* font-family: 'Poppins', sans-serif; 
 font-family: 'Open Sans', sans-serif;*/
 
+header {
+  background-color: aqua;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
