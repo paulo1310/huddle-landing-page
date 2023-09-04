@@ -27,7 +27,7 @@ section {
 section .lado-direito{
   display: flex;
   flex-direction: column;
-  padding-left: 40px;
+  padding: 0 40px;
 }
 
 section .lado-direito h1 {
@@ -46,34 +46,30 @@ section .lado-direito p {
   color: white;
   margin-top: 20px;
   margin-right: 30px;
+  line-height: 1.8;
 }
 
-section .lado-direito button {
+section .lado-direito a {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
   width: 180px;
   height: 50px;
   border-radius: 30px;
-  border: none;
   margin-top: 30px;
-}
-
-section .lado-direito button:hover {
-  background-color: var(--soft-magenta);
-}
-
-section .lado-direito button a {
-  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
   color: var(--violet);
-  font-size: 16px;
-  font-weight: 400;
 }
 
-section .lado-direito button a:hover {
+section .lado-direito a:hover {
+  background-color: var(--soft-magenta);
   color: #fff;
+  transition: .2s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
-
 
 footer .social-media {
   display: flex;
@@ -93,6 +89,12 @@ footer .social-media a i{
   align-items: center;
   justify-content: center;
   margin-left: 10px;
+}
+
+footer .social-media a i:hover {
+  color: var(--soft-magenta);
+  transition: .2s ease-in-out;
+  border: 1px solid var(--soft-magenta);
 }
 
 .attribution {
